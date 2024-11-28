@@ -1,11 +1,12 @@
-// import { useState } from 'react';
 import './App.css';
+//components
+import ChoreList from './components/ChoreList';
 
 function App() {
   return (
-    <>
-      <h1>Hello World!</h1>
-    </>
+    <div>
+      <ChoreList />
+    </div>
   );
 }
 

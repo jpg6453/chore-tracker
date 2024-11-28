@@ -1,1 +1,207 @@
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
 
+body {
+  background-color: #17181f;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.chore {
+  position: relative;
+  background-color: #30313d;
+  border-radius: 8px;
+  padding: 6px 16px;
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: opacity 0.3s linear;
+  min-width: 300px;
+  max-width: 750px;
+}
+.chore.done {
+  opacity: 0.3;
+  text-decoration: line-through;
+}
+.chore-left {
+  display: flex;
+  margin-right: 4px;
+}
+.chore-middle {
+  flex-grow: 1;
+}
+
+.chore-text {
+  font-size: 1.35rem;
+}
+.chore-amount {
+  font-size: 1.75rem;
+  width: 60px;
+}
+
+.chore-btn button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.chore-btn button:focus {
+  outline: none;
+}
+.chore-btn button svg {
+  fill: #888;
+  height: 20px;
+  width: 20px;
+}
+
+.chore-btn button svg:hover {
+  fill: aqua;
+}
+
+.due-date {
+  color: #888;
+}
+
+.chore-amount {
+  color: aqua;
+}
+.chore-btn {
+  display: flex;
+
+  padding: 12px 6px;
+  margin-top: 12px;
+}
+
+/* button.trash,
+button.up,
+button.down {
+  background: none;
+  border: none;
+  cursor: pointer;
+} */
+
+/* button.trash svg,
+button.up svg,
+button.down svg {
+  fill: #888;
+  height: 18px;
+} */
+
+.chore-wrapper {
+  display: flex;
+}
+
+input {
+  padding: 14px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  border: 2px solid #ddd;
+  color: #ddd;
+  opacity: 0.75;
+  font-size: 0.9rem;
+  background-color: inherit;
+}
+
+::placeholder {
+  color: #ddd;
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #888;
+}
+
+::-webkit-datetime-edit-text {
+  color: lightgrey;
+}
+::-webkit-datetime-edit-year-field[aria-valuetext='blank'] {
+  color: lightgrey;
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]) {
+  color: lightgrey;
+}
+::-webkit-datetime-edit-year-field:not([aria-valuetext]) {
+  color: lightgrey;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.wrapper {
+  margin-bottom: 1rem;
+}
+
+.wrapper button {
+  background-color: aqua;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  color: #17181f;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-error {
+  color: aqua;
+}
+
+button.back-to-chores {
+  color: aqua;
+  border: 2px solid aqua;
+  background-color: #17181f;
+  margin-top: 12px;
+}
+button.back-to-chores:hover {
+  background-color: #30313d;
+  border: 2px solid aqua;
+}
+
+.confirm-msg {
+  font-size: 0.9rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #17181f;
+  color: #ddd;
+  border: 2.5px solid aqua;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.confirm-msg.show {
+  display: flex;
+  padding: 4px 8px;
+}
+
+.confirm-msg button {
+  margin: 3px;
+  padding: 6px 12px;
+}
+.confirm-msg-btns button:nth-child(2) {
+  background-color: aqua;
+  color: #17181f;
+}
+.confirm-msg-btns button:nth-child(1) {
+  border: 2px solid #888;
+}
+.icon {
+  padding: 10px;
+}
