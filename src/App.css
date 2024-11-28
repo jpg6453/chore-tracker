@@ -24,7 +24,7 @@ body {
   font-weight: bold;
   transition: opacity 0.3s linear;
   min-width: 300px;
-  max-width: 750px;
+  max-width: 800px;
 }
 .chore.done {
   opacity: 0.3;
